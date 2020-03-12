@@ -550,6 +550,7 @@ class BoolqProcessor(DataProcessor):
         examples = []
         for (i, line) in enumerate(lines):
             if line == "": # check for empty string
+                print("empty string check: ", line)
                 continue
             item = json.loads(line) # item is a dictionary
             guid = item["idx"] # index
